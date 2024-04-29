@@ -1,0 +1,9 @@
+   BON A SAVOIR
+-Python est langage de haut niveau, portable, et orienté objet
+-Instagram, Spotify, Google...utilisent Python
+-Python(Django) pour les sites internet
+
+-Extension: .py
+-Les commentaires: #
+-execution de fichiers en ligne de commande: python -i calc.py
+ Avec calc.py le nom, du fichier
