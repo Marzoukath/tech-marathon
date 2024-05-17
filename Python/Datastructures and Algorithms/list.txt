@@ -1,0 +1,28 @@
+File d'attente
+
+Avec les files d'attente, on ajoute des valeurs àn les  une liste ( enqueue), et lorsque le moment est venu, 
+on supprime l'élément qui figure depuis le plus longtemps dans la liste.
+mplementation d'une liste doublement chainé
+e
+
+>>> circular_llist = CircularLinkedList()
+>>> circular_llist.print_list()
+None
+
+>>> a = Node("a")
+>>> b = Node("b")
+>>> c = Node("c")
+>>> d = Node("d")
+>>> a.next = b
+>>> b.next = c
+>>> c.next = d
+>>> d.next = a
+>>> circular_llist.head = a
+>>> circular_llist.print_list()
+a -> b -> c -> d
+
+>>> circular_llist.print_list(b)
+b -> c -> d -> a
+
+>>> circular_llist.print_list(d)
+d -> a -> b -> c
