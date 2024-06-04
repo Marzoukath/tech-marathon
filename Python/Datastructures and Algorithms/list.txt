@@ -26,3 +26,72 @@ b -> c -> d -> a
 
 >>> circular_llist.print_list(d)
 d -> a -> b -> c
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de Recherche</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Recherche des acteurs</h2>
+    <form action="#" method="get">
+        <label for="searchInput">Recherchez par le critere de votre choix. :</label><br>
+        <input type="text" id="searchInput" name="search" placeholder="Entrez ici...">
+        <input type="submit" value="Rechercher">
+    </form>
+    
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Date de Naissance</th>
+            <th>Lieu de Naissance</th>
+            <th>Email</th>
+            <th>Diplôme</th>
+            <th>Banque</th>
+            <th>RIB</th>
+            <th>PDF CIN</th> 
+        </tr>
+        <tr>
+            <td>Smith</td>
+            <td>John</td>
+            <td>01/01/1990</td>
+            <td>New York</td>
+            <td>john.smith@example.com</td>
+            <td>Baccalauréat</td>
+            <td>XYZ Bank</td>
+            <td>123456789</td>
+            <td><a href="lien_vers_votre_fichier.pdf" download>Télécharger</a></td> <!-- Lien vers le fichier PDF -->
+        </tr>
+        
+        <!-- Ajoutez d'autres lignes de données ici -->
+    </table>
+</body>
+</html>
+
