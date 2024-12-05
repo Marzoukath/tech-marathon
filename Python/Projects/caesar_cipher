@@ -1,0 +1,32 @@
+
+print ("Welcome to caesar cipher")
+symbols = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+while True:
+    answer = input("Do you want to encrypt () or decrypt message() ? Answer by e or d : ")
+    if answer.startswith('e'):
+        mode = 'encrypt'
+        break
+    if answer.startswith('d'):
+        mode = 'decrypt'
+        break
+while True:
+    key = int(input("Enter the key between 0 and 26 to use to {} message : ").format(mode))
+    if 0 < key and key <26 :
+        break
+message = input ("Enter the message to {} : ".format(mode))
+message = message.upper()
+translated = ''
+for i in message:
+    if i in symbols:
+
+        mes_num = symbols.find(i) 
+
+        if mode == 'decrypt':
+            mes_num = (mes_num-key)%26
+        if mode == 'encrypt':
+            mes_num = (mes_num + key)%26
+        translated = translated + symbols[mes_num]
+    else:
+        translated = translated + i
+        
+print("The message is :" , translated) 
